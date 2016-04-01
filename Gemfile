@@ -9,6 +9,9 @@ gem 'devise', '3.4.1'
 gem 'stripe', '1.16.1'
 # Use figaro to hide secret key
 gem 'figaro', '1.0.0'
+
+#Use paperclip for image uploads
+gem 'paperclip', '4.2.1'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3', group: [:development, :test]
 # Use postgresql as the database for production
