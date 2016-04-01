@@ -3,6 +3,12 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.0'
+# Use devise for user auth
+gem 'devise', '3.4.1'
+# Use stripe for handle payments
+gem 'stripe', '1.16.1'
+# Use figaro to hide secret key
+gem 'figaro', '1.0.0'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3', group: [:development, :test]
 # Use postgresql as the database for production
@@ -34,12 +40,6 @@ gem 'sdoc', '0.4.0',          group: :doc
 
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
 gem 'spring',        group: :development
-# Use devise for user auth
-gem 'devise', '3.4.1'
-# Use stripe for handle payments
-gem 'stripe', '1.16.1'
-# Use figaro to hide secret key
-gem 'figaro', '1.0.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
