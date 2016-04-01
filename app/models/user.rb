@@ -10,10 +10,10 @@ class User < ActiveRecord::Base
       puts "Creating customer"
       customer = Stripe::Customer.create(email: email, plan: plan_id, card: stripe_card_token)
       puts "Customer ID:"
-      puts customer.id
+      customer.id.inspect
       self.stripe_customer_token = customer.id
       puts "stripe_customer_token: "
-      puts self.stripe_customer_token
+      self.stripe_customer_token.inspect
       save!
     end
   end
